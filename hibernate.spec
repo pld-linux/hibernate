@@ -1,5 +1,5 @@
 Name:		hibernate
-Summary:        software suspend 2 hibernate script
+Summary:	Software suspend 2 hibernate script
 Version:	0.97
 Release:	1
 License:	GPL
