@@ -1,20 +1,29 @@
-Name:		hibernate
 Summary:	Software suspend 2 hibernate script
+Summary(pl):	Skrypt hibernuj±cy dla Software suspend 2
+Name:		hibernate
 Version:	0.97
 Release:	1
 License:	GPL
 Group:		Applications/System
-URL:		http://softwaresuspend.berlios.de/
 Source0:	http://dagobah.ucc.asn.au/swsusp/script2/%{name}-script-%{version}.tar.gz
 # Source0-md5:	74f98f5953c2e58e12ab056ba1a352a4
+URL:		http://softwaresuspend.berlios.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 hibernate is a shell script that handles the process of getting ready
 to suspend to disk and to resume from disk. It requires the Software
-Suspend 2 patches available at http://softwaresuspend.berlios.de/
+Suspend 2 patches available at http://softwaresuspend.berlios.de/ .
 After installing you will want to run 'hibernate -h' to see available
 options and modify your /etc/hibernate/hibernate.conf to set them.
+
+%description -l pl
+hibernate to skrypt pow³oki obs³uguj±cy proces przygotowania do
+zachowania stanu na dysku (suspend to disk) i obudzenia z dysku.
+Wymaga ³at Software Suspend 2 dostêpnych pod
+http://softwaresuspend.berlios.de/ . Po zainstalowaniu 'hibernate -h'
+poka¿e dostêpne opcje, które mo¿na ustawiæ w
+/etc/hibernate/hibernate.conf .
 
 %prep
 %setup -q -n %{name}-script-%{version}
