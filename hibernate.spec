@@ -1,12 +1,12 @@
 Summary:	Software suspend 2 hibernate script
 Summary(pl):	Skrypt hibernuj±cy dla Software suspend 2
 Name:		hibernate
-Version:	1.02
+Version:	1.03
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dagobah.ucc.asn.au/swsusp/script2/%{name}-script-%{version}.tar.gz
-# Source0-md5:	5f0fee0d6f8be9817b03e997dffe5bb9
+# Source0-md5:	4fa839c1edbbb442e3e7f6b804557e53
 URL:		http://softwaresuspend.berlios.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
