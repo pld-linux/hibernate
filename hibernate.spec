@@ -43,6 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGELOG COPYING TODO SCRIPTLET-API
 %attr(755,root,root) %{_sbindir}/hibernate
 %{_datadir}/hibernate
-%dir /etc/hibernate
-%config(noreplace) %verify(not md5 mtime size) /etc/hibernate/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/hibernate
 %{_mandir}/man?/*
