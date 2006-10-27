@@ -1,12 +1,13 @@
 Summary:	Software suspend 2 hibernate script
 Summary(pl):	Skrypt hibernuj±cy dla Software suspend 2
 Name:		hibernate
-Version:	1.93
+Version:	1.94
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://suspend2.net/downloads/all/%{name}-script-%{version}.tar.gz
-# Source0-md5:	903e30d67bcdf728f245a71b9ec412e2
+# Source0-md5:	f8826d4c96e320902382f29c91694c04
+Patch0:		%{name}-install.patch
 URL:		http://www.suspend2.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,6 +27,7 @@ dostêpne opcje, które mo¿na ustawiæ w /etc/hibernate/hibernate.conf .
 
 %prep
 %setup -q -n %{name}-script-%{version}
+%patch0 -p0
 
 %install
 rm -rf $RPM_BUILD_ROOT
