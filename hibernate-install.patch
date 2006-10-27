@@ -1,0 +1,24 @@
+--- install.sh	2006-10-09 17:08:04.000000000 +0200
++++ install.sh-new	2006-10-27 14:19:59.851101560 +0200
+@@ -52,7 +52,9 @@
+     cp -a ram.conf ${RAM_CONFIG_FILE}.dist
+     cp -a disk.conf ${DISK_CONFIG_FILE}.dist
+     cp -a suspend2.conf ${S2_CONFIG_FILE}.dist
+-    cp -a ususpend.conf ${US_CONFIG_FILE}.dist
++    cp -a ususpend-ram.conf ${US_CONFIG_FILE}.dist
++    cp -a ususpend-disk.conf ${US_CONFIG_FILE}.dist
++    cp -a ususpend-both.conf ${US_CONFIG_FILE}.dist
+     cp -a common.conf ${COMMON_CONFIG_FILE}.dist
+     EXISTING_CONFIG=1
+ else
+@@ -60,7 +62,9 @@
+     cp -a ram.conf $RAM_CONFIG_FILE
+     cp -a disk.conf ${DISK_CONFIG_FILE}
+     cp -a suspend2.conf ${S2_CONFIG_FILE}
+-    cp -a ususpend.conf ${US_CONFIG_FILE}
++    cp -a ususpend-ram.conf ${US_CONFIG_FILE}
++    cp -a ususpend-disk.conf ${US_CONFIG_FILE}
++    cp -a ususpend-both.conf ${US_CONFIG_FILE}
+     cp -a common.conf ${COMMON_CONFIG_FILE}
+ fi
+ 
