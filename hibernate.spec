@@ -1,5 +1,5 @@
 Summary:	Software suspend 2 hibernate script
-Summary(pl.UTF-8):   Skrypt hibernujący dla Software suspend 2
+Summary(pl.UTF-8):	Skrypt hibernujący dla Software suspend 2
 Name:		hibernate
 Version:	1.94
 Release:	1
