@@ -8,6 +8,7 @@ Group:		Applications/System
 Source0:	http://tuxonice.net/downloads/all/%{name}-script-%{version}.tar.gz
 # Source0-md5:	11832e77edc4a13330aaced8cea52dfb
 URL:		http://www.tuxonice.net/
+Requires:	kbd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
