@@ -1,12 +1,12 @@
 Summary:	Software suspend 2 hibernate script
 Summary(pl.UTF-8):	Skrypt hibernujący dla Software suspend 2
 Name:		hibernate
-Version:	1.99
+Version:	2.0
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://tuxonice.net/downloads/all/%{name}-script-%{version}.tar.gz
-# Source0-md5:	11832e77edc4a13330aaced8cea52dfb
+# Source0-md5:	5c21770afbae503450e3c4a5502bf29d
 URL:		http://www.tuxonice.net/
 Requires:	kbd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
